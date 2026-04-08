@@ -225,7 +225,7 @@
         const totalPrice = (med.price * med.minQty * qty).toFixed(2);
         const totalPcs = med.minQty * qty;
         
-        const textToCopy = `${med.name} (${med.generic})\nQty: ${qty} Strip (${totalPcs} Pieces)\nTotal Price: £${totalPrice}`;
+        const textToCopy = `${med.name} (${med.generic})\nQty: ${qty} Strip (${totalPcs} Pieces)\n £${totalPrice}`;
         
         navigator.clipboard.writeText(textToCopy).then(() => {
             alert('Order Details Copied!');
